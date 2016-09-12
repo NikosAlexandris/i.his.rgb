@@ -1,27 +1,17 @@
 <h2>DESCRIPTION</h2>
 
-<em>i.his.rgb</em> is an image processing program that
-processes three input raster map layers as hue, intensity
-and saturation components and produces three output raster
-map layers representing the red, green and blue components
-of this data.  The output raster map layers are created by
-a standard hue-intensity-saturation (his) to red-green-blue
-(rgb) color transformation.  Each output raster map layer
-is given a linear gray scale color table.  The current
-geographic region and mask settings are respected.
+<p><em>i.his.rgb</em> is an image processing program that processes three input
+images as hue, intensity and saturation components and produces three output
+images representing the red, green and blue colors.</p>
 
-<h2>NOTES</h2>
+<p>Hue values are expected to be degrees, ranging in [0, 360] while intensity and
+saturation should range within [0,1].
 
-It is not possible to process three bands with
-<em>i.his.rgb</em> and then exactly recover the original
-bands with <em>i.rgb.his</em>.  
+The output images base upon a standard hue-intensity-saturation (his) to red-green-blue
+(rgb) color space transformation.</p>
 
-This is due to loss of precision because of integer
-computations and rounding.  Tests have shown that more than
-70% of the original cell values will be reproduced exactly
-after transformation in both directions and that 99% will
-be within plus or minus 1.  A few cell values may differ
-significantly from their original values.
+<p>Each output raster map layer is given a linear gray scale color table.  The
+current geographic region definition and mask settings are respected.</p>
 
 <h2>SEE ALSO</h2>
 
@@ -32,11 +22,7 @@ significantly from their original values.
 
 <h2>AUTHOR</h2>
 
-David Satnik, GIS Laboratory, 
-Central Washington University
-
-<p>
-with acknowledgements to Ali Vali, Univ. of Texas Space Research
-Center, for the core routine.
-
-<p><i>Last changed: $Date: 2014-12-09 19:23:56 +0200 (Tue, 09 Dec 2014) $</i>
+David Satnik, GIS Laboratory, Central Washington University
+<br>
+with acknowledgements to Ali Vali, Univ. of Texas, Space Research Center, for the core routine.
+Nikos Alexandris
