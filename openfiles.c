@@ -16,9 +16,9 @@ void openfiles(char *hue, char *intensity, char *saturation,
                DCELL * rowbuf[3])
 {
     /* open output files */
-    fd_output[0] = Rast_open_fp_new(red);
-    fd_output[1] = Rast_open_fp_new(green);
-    fd_output[2] = Rast_open_fp_new(blue);
+    fd_output[0] = Rast_open_new(red, DCELL_TYPE);
+    fd_output[1] = Rast_open_new(green, DCELL_TYPE);
+    fd_output[2] = Rast_open_new(blue, DCELL_TYPE);
 
     /* allocate the cell row buffer */
     rowbuf[0] = Rast_allocate_d_buf();
