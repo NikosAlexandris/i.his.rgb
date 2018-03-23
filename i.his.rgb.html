@@ -1,16 +1,18 @@
 <h2>DESCRIPTION</h2>
 
-<p><em>i.his.rgb</em> is an image processing program that processes three input
-images as hue, intensity and saturation components and produces three output
-images representing the red, green and blue colors.</p>
+<p><em>i.his.rgb</em> processes three input images as hue, intensity and
+saturation components. The output images represent the red, green
+and blue colors.</p>
 
-<p>Hue values are expected to be degrees, ranging in [0, 360] while intensity and
+<p>Hue values are expected to be degrees ranging in [0, 360] while intensity and
 saturation should range within [0,1].
 
-The output images base upon a standard hue-intensity-saturation (his) to red-green-blue
-(rgb) color space transformation.</p>
+The output images base upon a standard hue-intensity-saturation (HIS) to
+red-green-blue (RGB) color space transformation. The derived values are of
+double precision. A user may convert the output in integer values using
+<a href="r.mapcalc">i.rgb.his</a>.</p>
 
-<p>Each output raster map layer is given a linear gray scale color table.  The
+<p>Each output raster map layer is given a linear gray scale color table. The
 current geographic region definition and mask settings are respected.</p>
 
 <h2>SEE ALSO</h2>
@@ -25,4 +27,5 @@ current geographic region definition and mask settings are respected.</p>
 David Satnik, GIS Laboratory, Central Washington University
 <br>
 with acknowledgements to Ali Vali, Univ. of Texas, Space Research Center, for the core routine.
-Nikos Alexandris
+<br>
+Nikos Alexandris, support for user defined image bit depth
