@@ -5,12 +5,13 @@
  *
  * AUTHOR(S):    David Satnik, GIS Laboratory, Central Washington University
  *               with acknowledgements to Ali Vali,
- *               Univ. of Texas Space Research Center, for the core routine. 
- *               
- * PURPOSE:      Hue-intensity-saturation (his) to red-green-blue (rgb)
+ *               Univ. of Texas Space Research Center, for the core routine.
+ *               Nikos Alexandris, support for user defined image bit depth
+ *
+ * PURPOSE:      Hue-Intensity-Saturation (his) to Red-Green-Blue (rgb)
  *               raster map color transformation function.
  *
- * COPYRIGHT:    (C) 2007-2008 by the GRASS Development Team
+ * COPYRIGHT:    (C) 2007-2018 by the GRASS Development Team
  *
  *               This program is free software under the GNU General Public
  *               License (>=v2). Read the file COPYING that comes with GRASS
